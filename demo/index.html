@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App.js &ndash; Javascript async loader and DOM ready checker</title>
+    <script>
+        APP_DEBUG = true;
+        // APP_LOADER_VAR = 'app';
+        // APP_VAR = 'App'
+
+        (function (w, d, f) {
+            w['app'] = function () {
+                (w['app'].queue = w['app'].queue || []).push(arguments)
+            }; w['app'].time = (1 * new Date());
+
+            (function l() {
+                if (!f.length)
+                    return;
+
+                var s = d.createElement('script'),
+                    e = d.getElementsByTagName('script')[0];
+
+                s.async = 1; s.src = f[0]; s.onload = l;
+                e.parentNode.insertBefore(s, e);
+                f.shift();
+            })();
+        })(window, document, [
+            '//code.jquery.com/jquery.min.js',
+            '../src/app.js',
+            'demo.js'
+        ]);
+
+        app('foo.to.set', 'bar');
+
+        app(function () {
+            console.warn('I am executed on DOM ready...');
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
