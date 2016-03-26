@@ -1,0 +1,20 @@
+{
+  "name": "App.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pixelbay/App.js",
+  "authors": [
+    "Honza Hommer <honza@pixelbay.cz>"
+  ],
+  "description": "Javascript async loader and DOM ready checker",
+  "main": "src/app.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "js",
+    "jquery",
+    "dom",
+    "ready"
+  ],
+  "license": "MIT"
+}
