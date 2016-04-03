@@ -253,6 +253,10 @@
          * App.for(array, function (item, i) { ... });
          */
         each: function (collection, iteratee) {
+            if (this.isArray(collection) === false) {
+                return;
+            }
+            
             for (var i = 0; i < collection.length; i++) {
                 iteratee(collection[i], i);
             }
@@ -271,6 +275,10 @@
          * App.forEach(object, function (item, key) { ... });
          */
         forEach: function (collection, iteratee) {
+            if (this.isArray(collection) === false) {
+                return;
+            }
+            
             for (var prop in collection) {
                 if(collection.hasOwnProperty(prop)) {
                     iteratee(collection[prop], prop);
