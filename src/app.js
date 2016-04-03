@@ -275,7 +275,7 @@
          * App.forEach(object, function (item, key) { ... });
          */
         forEach: function (collection, iteratee) {
-            if (this.isArray(collection) === false) {
+            if (typeof collection !== 'object') {
                 return;
             }
             
