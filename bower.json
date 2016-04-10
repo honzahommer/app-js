@@ -1,7 +1,6 @@
 {
-  "name": "App.js",
-  "version": "0.0.1",
-  "homepage": "https://github.com/pixelbay/App.js",
+  "name": "app-js",
+  "homepage": "https://github.com/pixelbay/app-js",
   "authors": [
     "Honza Hommer <honza@pixelbay.cz>"
   ],
@@ -16,5 +15,12 @@
     "dom",
     "ready"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

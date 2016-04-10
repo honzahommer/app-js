@@ -1,11 +1,11 @@
 {
-  "name": "App.js",
-  "version": "0.0.1",
+  "name": "app-js",
+  "version": "1.0.0",
   "description": "Javascript async loader and DOM ready checker",
   "main": "src/app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pixelbay/App.js.git"
+    "url": "git+https://github.com/pixelbay/app-js.git"
   },
   "keywords": [
     "js",
@@ -16,9 +16,9 @@
   "author": "Honza Hommer <honza@pixelbay.cz>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pixelbay/App.js/issues"
+    "url": "https://github.com/pixelbay/app-js/issues"
   },
-  "homepage": "https://github.com/pixelbay/App.js#readme",
+  "homepage": "https://github.com/pixelbay/app-js#readme",
   "devDependencies": {
     "grunt": "^0.4.5"
   }
